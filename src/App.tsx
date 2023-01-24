@@ -11,7 +11,9 @@ function App() {
       {session ? (
         <LandingPage />
       ) : <Navigate to="/signup" />}
+     
     </div>
+    
   );
 }
 

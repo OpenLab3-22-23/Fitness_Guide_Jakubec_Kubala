@@ -70,6 +70,7 @@ const WorkoutTracker: React.FC = () => {
           </li>
         ))}
       </ul>
+      <img src="/images/ronnie.gif"></img>
     </div>
   );
 };

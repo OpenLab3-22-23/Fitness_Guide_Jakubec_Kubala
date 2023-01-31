@@ -22,8 +22,8 @@ const WorkoutTracker: React.FC = () => {
   };
 
   return (
-    <div className="bg-gray-200">
-      <h1 className="text-2xl font-medium m-4">Workout Tracker</h1>
+    <div className="bg-[#000000]">
+      <h1 className="text-2xl font-medium m-4 text-center text-white">Fitness Guide</h1>
       <form onSubmit={handleSubmit} className="bg-white p-4 rounded-md">
         <label htmlFor="name" className="block font-medium text-sm">
           Workout Name:
@@ -70,7 +70,7 @@ const WorkoutTracker: React.FC = () => {
           </li>
         ))}
       </ul>
-      <img src="/images/ronnie.gif"></img>
+      <img src="/images/ronnie.gif" className=""></img>
     </div>
   );
 };

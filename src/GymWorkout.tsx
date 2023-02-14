@@ -1,35 +1,17 @@
 import React, { useState } from 'react';
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
 
 
-const GymWorkout: React.FC = () => {
-  const [workouts, setWorkouts] = useState<Workout[]>([]);
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const newWorkout: Workout = {
-      name: formData.get('name') as string,
-      sets: formData.get('sets') as number,
-      reps: formData.get('reps') as number,
-    };
-    setWorkouts([...workouts, newWorkout]);
-  };
-
+function GymWorkout() {
   return (
-  
-  <div className="h-full w-full bg-[url('/images/background.png')]">
-    <header className='bg-black p-10 flex items-center justify-between'>
-    
-     <nav className="flex">
-      <a href="#" className="text-white mr-4 hover:text-gray-400">About us</a>
-      <a href="#" className="text-white hover:text-gray-400">Contact</a>
-     </nav>
+ <div className="h-screen w-screen bg-[url('/images/background.png')]">
+  <div className="h-16 w-full ">
+    <header className='bg-black p-10 flex items-center justify-center h-full'>
+      <h1 className="text-amber-200 font-semibold text-5xl">GYMWORKOUT</h1>
     </header>
-    <div className='text-white text-5xl text-center pt-20'>What are you looking for?</div>
-
-    
   </div>
+ </div>
   )
 };
 

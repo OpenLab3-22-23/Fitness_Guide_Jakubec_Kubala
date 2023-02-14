@@ -3,47 +3,54 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
 
 
-const FitnessGuide: React.FC = () => {
-  const [workouts, setWorkouts] = useState<Workout[]>([]);
+function FitnessGuide() {
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const formData = new FormData(e.target as HTMLFormElement);
-    const newWorkout: Workout = {
-      name: formData.get('name') as string,
-      sets: formData.get('sets') as number,
-      reps: formData.get('reps') as number,
-    };
-    setWorkouts([...workouts, newWorkout]);
-  };
 
   return (
   
-  <div className="h-full w-full bg-[url('/images/background.png')]">
+  <div className="h-full w-full bg-[url('/images/background.png')] font-semibold">
     <header className='bg-black p-10 flex items-center justify-between'>
-      <h1 className="text-white font-medium">Header Title</h1>
+      <nav className='flex'>
+        <Link to="/Log">
+          <a href="#" className="text-amber-200 mr-4 hover:text-gray-400 text-2xl">Log in</a>
+        </Link>
+        <Link to="/Register">
+          <a href="#" className="text-amber-200 mr-4 hover:text-gray-400 text-2xl">Register</a>
+        </Link>
+        <Link to="/Settings">
+          <a href="#" className="text-amber-200 mr-4 hover:text-gray-400 text-2xl">Settings</a>
+        </Link>
+      </nav>
      <nav className="flex">
-      <a href="#" className="text-white mr-4 hover:text-gray-400">About us</a>
-      <a href="#" className="text-white hover:text-gray-400">Contact</a>
+      <Link to="/AboutUs">
+       <a href="#" className="text-amber-200 mr-4 hover:text-gray-400 text-2xl">About us</a>
+      </Link>
+      <Link to="/Contact">
+       <a href="#" className="text-amber-200 hover:text-gray-400 text-2xl" >Contact</a>
+      </Link>
      </nav>
     </header>
-    <div className='text-white text-5xl text-center pt-20'>What are you looking for?</div>
+    <div className='text-amber-200 text-5xl text-center pt-20'>What are you looking for?</div>
 
     <div className='flex justify-center pt-10'>
       <Link to="/GymWorkout"> 
-      <a href='GymWorkout.html'>
+       <div>
         <img src='/images/gymworkout.png' className='mx-20 opacity-75'></img>
-      </a>
+       </div>
       </Link>
 
       <Link to="/HomeWorkout">
-      <div>
+       <div>
         <img src='/images/homeworkout.png' className='mx-20 opacity-75'></img>
-      </div>
+       </div>
       </Link>
-    
     </div>
     
+    <button className=''>SAVED WORKOUTS</button>
+
+
+
+
   </div>
   )
 };

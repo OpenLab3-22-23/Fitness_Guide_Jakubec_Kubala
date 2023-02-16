@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
 
 
-function GymWorkout() {
+function SavedWorkouts() {
   return (
  <div className="h-screen w-screen bg-[url('/images/background.png')]">
   <div className="h-16 w-full ">
@@ -11,11 +11,11 @@ function GymWorkout() {
        <Link to="/FitnessGuide">
        <img src='/images/Logo.png' className='mr-10 '></img>
        </Link>
-      <h1 className="text-amber-200 font-semibold text-5xl">GYMWORKOUT</h1>
+      <h1 className="text-amber-200 font-semibold text-5xl">SAVED WORKOUTS</h1>
     </header>
   </div>
  </div>
   )
 };
 
-export default GymWorkout;
+export default SavedWorkouts;

@@ -7,8 +7,8 @@ function FitnessGuide() {
 
 
   return (
-  
-  <div className="h-full w-full bg-[url('/images/background.png')] font-semibold">
+ <div className="h-screen w-screen bg-[url('/images/background.png')]">
+  <div className="h-full w-full ">
     <header className='bg-black p-10 flex items-center justify-between'>
       <nav className='flex'>
         <Link to="/Log">
@@ -46,12 +46,19 @@ function FitnessGuide() {
       </Link>
     </div>
     
-    <button className=''>SAVED WORKOUTS</button>
+    <div className='flex justify-center pt-20'>
+      <Link to="/SavedWorkouts">
+      <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold py-4 px-6 rounded">
+       SAVED WORKOUTS
+      </button>
+      </Link>
+    </div>
 
 
 
 
   </div>
+ </div>
   )
 };
 

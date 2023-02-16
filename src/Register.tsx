@@ -11,6 +11,9 @@ function Register() {
     <div className="h-screen w-screen bg-[url('/images/background.png')]">
       <div className="h-16 w-full ">
         <header className='bg-black p-10 flex items-center justify-center h-full'>
+          <Link to="/FitnessGuide">
+          <img src='/images/Logo.png' className='mr-10'></img>
+          </Link>
           <h1 className="text-amber-200 font-semibold text-5xl">REGISTER</h1>
         </header>
      </div>

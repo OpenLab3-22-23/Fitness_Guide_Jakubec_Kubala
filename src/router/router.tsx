@@ -9,6 +9,8 @@ import Contact from "../Contact";
 import Register from "../Register";
 import Settings from "../Settings";
 import Log from "../Log";
+import FitnessGuide from "../WorkoutTracker";
+import SavedWorkouts from "../SavedWorkouts";
 
 export const router = createBrowserRouter([
   {
@@ -50,6 +52,14 @@ export const router = createBrowserRouter([
   {
     path: "/Settings",
     element: <Settings />
-  }
+  },
+  {
+    path: "/FitnessGuide",
+    element: <FitnessGuide />,
+  },
+  {
+    path: "/SavedWorkouts",
+    element: <SavedWorkouts />,
+  },
 
 ]);

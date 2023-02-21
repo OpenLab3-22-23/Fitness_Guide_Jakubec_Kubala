@@ -8,16 +8,64 @@ function Register() {
 
   return (
   
-    <div className="h-screen w-screen bg-[url('/images/background.png')]">
-      <div className="h-16 w-full ">
-        <header className='bg-black p-10 flex items-center justify-center h-full'>
-          <Link to="/FitnessGuide">
-          <img src='/images/Logo.png' className='mr-10'></img>
-          </Link>
-          <h1 className="text-amber-200 font-semibold text-5xl">REGISTER</h1>
-        </header>
-     </div>
-    </div> 
+<div className="h-screen w-screen bg-[url('/images/background.png')]">
+ <div className="h-16 w-full ">
+    <header className='bg-black p-10 flex items-center justify-center h-full'>
+      <Link to="/FitnessGuide">
+       <img src='/images/Logo.png' className='mr-10'></img>
+      </Link>
+       <h1 className="text-amber-200 font-semibold text-5xl">REGISTER</h1>
+    </header>
+  <div className="w-full max-w-md mx-auto">
+  <form className="bg-black shadow-md rounded px-8 pt-6 pb-8 mb-4 opacity-95">
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" for="name">
+        Name
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name"></input>
+    </div>
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" for="email">
+        Email
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"></input>
+    </div>
+    <div className="mb-4">
+      <label className="block text-gray-700 font-bold mb-2" for="password">
+        Password
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password"></input>
+    </div>
+    <div className="mb-6">
+      <label className="block text-gray-700 font-bold mb-2" for="confirm-password">
+        Confirm Password
+      </label>
+      <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="confirm-password" type="password" placeholder="Confirm Password"></input>
+    </div>
+    <div className="flex items-center justify-between">
+      <button className="bg-amber-200 hover:bg-amber-400 text-black font-bold py-2 px-4 rounded 
+                         focus:outline-none focus:shadow-outline" type="button">
+        Register
+      </button>
+    </div>
+  </form>
+ </div>
+ <div className='h-full flex items-center justify-center '>
+    <a className='pt-50 text-white h-full font-semibold text-3xl'>Already have account?</a>
+   </div>
+   <div className='h-full flex items-center justify-center'>
+     <Link to="/Log">
+     <a className='text-white font-semibold text-3xl'>Log In!</a>
+     </Link>
+   </div>
+
+
+
+
+
+
+ </div>
+</div> 
   )
 };
 

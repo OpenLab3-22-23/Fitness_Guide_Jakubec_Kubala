@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
 
 
-function AboutUs() {
+function Shoulderseatedpress() {
 
 
   return (
@@ -14,15 +14,11 @@ function AboutUs() {
           <Link to="/FitnessGuide">
           <img src='/images/Logo.png' className='mr-10'></img>
           </Link>
-          <h1 className="text-amber-200 font-semibold text-5xl">ABOUT US</h1>
+          <h1 className="text-amber-200 font-semibold text-5xl">SHOULDER SEATER PRESS</h1>
         </header>
-        <div className='text-2xl text-center pt-20 text-white'>
-          We made this web site for people who are interested in working out, you can find many exercises<br></br> that can be done home
-          or in a gym. We will explain technique, advantages as well as disadvanges of exercises.
-        </div>
      </div>
     </div> 
   )
-};
+}
 
-export default AboutUs;
+export default Shoulderseatedpress;

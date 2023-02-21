@@ -1,6 +1,6 @@
 import openlab from "./assets/openlab.svg";
 import { useAuth } from "./auth/Auth";
-import FitnessGuide from "./WorkoutTracker";
+import FitnessGuide from "./FitnessGuide";
 
 
 export default function LandingPage(): JSX.Element {

@@ -9,8 +9,14 @@ import Contact from "../Contact";
 import Register from "../Register";
 import Settings from "../Settings";
 import Log from "../Log";
-import FitnessGuide from "../WorkoutTracker";
+import FitnessGuide from "../FitnessGuide";
 import SavedWorkouts from "../SavedWorkouts";
+import Benchpress from "../GymWorkouts/Benchpress";
+import Bicepcurls from "../GymWorkouts/Bicepcurls";
+import Cableflies from "../GymWorkouts/Cableflies";
+import Deadlift from "../GymWorkouts/Deadlift";
+import Legpress from "../GymWorkouts/Legpress";
+import Shoulderseatedpress from "../GymWorkouts/Shoulderseatedpress";
 
 export const router = createBrowserRouter([
   {
@@ -60,6 +66,30 @@ export const router = createBrowserRouter([
   {
     path: "/SavedWorkouts",
     element: <SavedWorkouts />,
+  },
+  {
+    path: "/Benchpress",
+    element: <Benchpress />,
+  },
+  {
+    path: "/Bicepcurls",
+    element: <Bicepcurls />,
+  },
+  {
+    path: "/Cableflies",
+    element: <Cableflies />,
+  },
+  {
+    path: "/Deadlift",
+    element: <Deadlift />,
+  },
+  {
+    path: "/Legpress",
+    element: <Legpress />,
+  },
+  {
+    path: "/Shoulderseatedpress",
+    element: <Shoulderseatedpress />,
   },
 
 ]);

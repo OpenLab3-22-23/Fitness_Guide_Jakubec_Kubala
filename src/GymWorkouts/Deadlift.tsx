@@ -16,6 +16,21 @@ function Deadlift() {
           </Link>
           <h1 className="text-amber-200 font-semibold text-5xl">DEADLIFT</h1>
         </header>
+
+        <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a Deadlift?</div>
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Stand behind a barbell with your feet about shoulder-width apart.
+          Sit your hips back, bend your knees slightly, and lean your torso forward, maintaining a tight core and flat back. Grab the bar, placing your hands shoulder-width apart,
+          palms facing in toward your body.
+          Push your feet into the floor and stand up tall, pulling the weight with you and keeping your arms straight. Bring your hips forward and squeeze your abs and glutes at 
+          the top. Slowly reverse the movement, bending your knees and pushing your butt back to lower the weight back to the floor. Keep the bar close to your body the entire 
+          time and maintain a flat back. This is 1 rep.<br></br>
+          BENEFITS:<br></br>
+          It is perfect if you’re interested in lifting heavy.Deadlift can help get you strong as hell, if that’s 
+          a goal of yours. Deadlift can also be great option for people who don’t feel comfortable doing lunges or 
+          squats (if knee pain arises during them).It seriously work your grip strength.
+        </div>
+
+
      </div>
     </div> 
   )

@@ -13,7 +13,7 @@ import FitnessGuide from "../FitnessGuide";
 import SavedWorkouts from "../SavedWorkouts";
 import Benchpress from "../GymWorkouts/Benchpress";
 import Bicepcurls from "../GymWorkouts/Bicepcurls";
-import Cableflies from "../GymWorkouts/Cableflies";
+import Cableflies from "../GymWorkouts/Cableflyes";
 import Deadlift from "../GymWorkouts/Deadlift";
 import Legpress from "../GymWorkouts/Legpress";
 import Shoulderseatedpress from "../GymWorkouts/Shoulderseatedpress";

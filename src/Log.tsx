@@ -49,7 +49,9 @@ function Log() {
    </div>
    <div className='h-full flex items-center justify-center'>
      <Link to="/Register">
-     <a className='text-white font-semibold text-3xl'>Register now!</a>
+     <button className="text-amber-200 hover:bg-neutral-700 bg-neutral-900 font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+        Register now!
+     </button>
      </Link>
    </div>
 

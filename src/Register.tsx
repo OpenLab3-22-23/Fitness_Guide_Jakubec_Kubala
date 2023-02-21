@@ -19,25 +19,25 @@ function Register() {
   <div className="w-full max-w-md mx-auto">
   <form className="bg-black shadow-md rounded px-8 pt-6 pb-8 mb-4 opacity-95">
     <div className="mb-4">
-      <label className="block text-gray-700 font-bold mb-2" for="name">
+      <label className="block text-gray-700 font-bold mb-2" >
         Name
       </label>
       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="name" type="text" placeholder="Name"></input>
     </div>
     <div className="mb-4">
-      <label className="block text-gray-700 font-bold mb-2" for="email">
+      <label className="block text-gray-700 font-bold mb-2" >
         Email
       </label>
       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Email"></input>
     </div>
     <div className="mb-4">
-      <label className="block text-gray-700 font-bold mb-2" for="password">
+      <label className="block text-gray-700 font-bold mb-2" >
         Password
       </label>
       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Password"></input>
     </div>
     <div className="mb-6">
-      <label className="block text-gray-700 font-bold mb-2" for="confirm-password">
+      <label className="block text-gray-700 font-bold mb-2" >
         Confirm Password
       </label>
       <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="confirm-password" type="password" placeholder="Confirm Password"></input>

@@ -2,10 +2,12 @@ import { Navigate } from "react-router-dom";
 import "./App.css";
 import { useAuth } from "./auth/Auth";
 import LandingPage from "./LandingPage";
+import React, { useState } from 'react';
 
 function App() {
-  const { session } = useAuth();
 
+  const { session } = useAuth();
+  
   return (
     <div className="w-screen h-screen">
       {session ? (

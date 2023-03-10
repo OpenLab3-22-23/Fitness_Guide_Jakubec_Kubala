@@ -17,6 +17,8 @@ import Cableflies from "../GymWorkouts/Cableflyes";
 import Deadlift from "../GymWorkouts/Deadlift";
 import Legpress from "../GymWorkouts/Legpress";
 import Shoulderseatedpress from "../GymWorkouts/Shoulderseatedpress";
+import Pushup from "../HomeWorkout/Pushup";
+import Pullup from "../HomeWorkout/Pullup";
 
 export const router = createBrowserRouter([
   {
@@ -91,5 +93,12 @@ export const router = createBrowserRouter([
     path: "/Shoulderseatedpress",
     element: <Shoulderseatedpress />,
   },
-
+  {
+    path: "/Pushup",
+    element: <Pushup />,
+  },
+  {
+    path: "/Pullup",
+    element: <Pullup />,
+  },
 ]);

@@ -44,15 +44,15 @@ function HomeWorkout() {
          </div>
 
         <div className='flex justify-center pt-10'>
-         <Link to=""> 
+         <Link to="/Pushup"> 
          <div>
-         <img src={CDNURL + "/" + ""} className='mx-20 opacity-75'></img>
+         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75'></img>
          </div>
          </Link>
 
-         <Link to="">
+         <Link to="/Pullup">
         <div>
-        <img src={CDNURL + "/" + ""} className='mx-20 opacity-75'></img>
+        <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-75'></img>
         </div>
         </Link>
 

@@ -1,13 +1,32 @@
 import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
+
+
+const CDNURL = "https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/";
 // import the Tailwind CSS styles
 
 
 function FitnessGuide() {
 
 
+  const [ images, setImages ] = useState([]);
+  const user = useUser();
+  const supabase = useSupabaseClient();
+
+  async function getImages() {
+    const { data, error } = await supabase
+      .storage
+      .from('images')
+      .list("/", {
+        limit: 100,
+        offset: 0,
+        sortBy: { column: "name", order: "asc"}
+      });   
+  }
+
   return (
- <div className="h-screen w-screen bg-[url('/images/background.png')]">
+ <div className="h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
   <div className="h-full w-full ">
     <header className='bg-black p-10 flex items-center justify-between'>
       <nav className='flex'>
@@ -35,13 +54,13 @@ function FitnessGuide() {
     <div className='flex justify-center pt-10'>
       <Link to="/GymWorkout"> 
        <div>
-        <img src='/images/gymworkout.png' className='mx-20 opacity-75'></img>
+        <img src={CDNURL + "/" + "gymworkout.png"}  className='mx-20 opacity-75'></img>
        </div>
       </Link>
 
       <Link to="/HomeWorkout">
        <div>
-        <img src='/images/homeworkout.png' className='mx-20 opacity-75'></img>
+        <img src={CDNURL + "/" + "homeworkout.png"} className='mx-20 opacity-75'></img>
        </div>
       </Link>
     </div>

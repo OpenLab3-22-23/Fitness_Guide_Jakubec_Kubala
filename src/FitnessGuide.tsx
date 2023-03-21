@@ -17,7 +17,7 @@ function FitnessGuide() {
   async function getImages() {
     const { data, error } = await supabase
       .storage
-      .from('images')
+      .from('gym-workout-imgs')
       .list("/", {
         limit: 100,
         offset: 0,

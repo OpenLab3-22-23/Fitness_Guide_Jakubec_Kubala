@@ -43,6 +43,12 @@ function Legpress() {
           You can emphasize different muscles by varying your foot position. It builds strength in these muscles, and you
           can use it to overcome imbalances, such as overly developed hamstrings, compared to quadriceps.
         </div>
+        
+        <div className='flex justify-center pt-20'>
+          <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold py-4 px-6 rounded">
+          SAVE WORKOUT
+          </button>
+        </div>
 
      </div>
     </div> 

@@ -47,6 +47,12 @@ function Cableflyes() {
           of tension on the muscles when your arms are spread wide, but almost none once your arms are vertical). The cable setup gives your muscles
           almost uninterrupted time under tension, and a huge pump — each of which which can help optimize muscle growth.
         </div>
+
+        <div className='flex justify-center pt-20'>
+          <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold py-4 px-6 rounded">
+          SAVE WORKOUT
+          </button>
+        </div>
         
      </div>
     </div> 

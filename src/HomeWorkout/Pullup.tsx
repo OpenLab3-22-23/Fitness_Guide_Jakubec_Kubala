@@ -37,9 +37,12 @@ function Pullup() {
        blalbalbalbal
       </div>
 
-
-
-
+      <div className='flex justify-center pt-20'>
+          <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold py-4 px-6 rounded">
+          SAVE WORKOUT
+          </button>
+        </div>
+        
      </div>
     </div> 
   )

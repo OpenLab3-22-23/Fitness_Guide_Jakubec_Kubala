@@ -23,8 +23,8 @@ function Legpress() {
 
   return (
   
-    <div className="h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
-      <div className="h-16 w-full ">
+    <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
+      <div className="min-h-screen w-full ">
         <header className='bg-black p-10 flex items-center justify-center h-full'>
           <Link to="/FitnessGuide">
           <img src={CDNURL + "/" + "Logo.png"} className='mr-10'></img>

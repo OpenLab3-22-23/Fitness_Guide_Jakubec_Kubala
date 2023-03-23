@@ -26,7 +26,7 @@ function FitnessGuide() {
   }
 
   return (
- <div className="h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
+ <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
   <div className="h-full w-full ">
     <header className='bg-black p-10 flex items-center justify-between'>
       <nav className='flex'>
@@ -49,7 +49,7 @@ function FitnessGuide() {
       </Link>
      </nav>
     </header>
-    <div className='text-amber-200 text-5xl text-center pt-20'>What are you looking for?</div>
+    <div className='text-amber-200 text-5xl text-center pt-10'>What are you looking for?</div>
 
     <div className='flex justify-center pt-10'>
       <Link to="/GymWorkout"> 

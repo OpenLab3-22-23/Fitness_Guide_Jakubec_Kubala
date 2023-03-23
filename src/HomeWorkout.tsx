@@ -23,8 +23,8 @@ function HomeWorkout() {
 
   return (
   
-    <div className="h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
-      <div className="h-16 w-full ">
+    <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
+      <div className="min-h-screen w-full ">
         <header className='bg-black p-10 flex items-center justify-center h-full'>
           <Link to="/FitnessGuide">
           <img src={CDNURL + "/" + "Logo.png"} className='mr-10'></img>
@@ -35,10 +35,12 @@ function HomeWorkout() {
         <div className="w-full max-w-sm">
          <form>
           <div className="flex items-center py-2">
-           <input className="appearance-none bg-transparent border-none w-full text-amber-200 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Search..."></input>
-           <button className="bg-amber-200 hover:bg-amber-400  text-sm  text-black py-1 px-2 rounded" type="button">
-             Search
-           </button>
+            <form className="flex" id="search-form">
+              <input className="bg-black border-2 border-amber-200  rounded-l-md py-2 px-4 w-full" type="text" placeholder="Search"></input>
+              <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold rounded-r-md py-2 px-4">
+                Search
+              </button>
+            </form>
           </div>
          </form>
          </div>
@@ -57,14 +59,6 @@ function HomeWorkout() {
         </Link>
 
         </div>
-
-       
-
-
-
-
-
-
 
 
      </div>

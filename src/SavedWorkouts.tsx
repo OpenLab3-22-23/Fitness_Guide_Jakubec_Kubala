@@ -33,9 +33,9 @@ function SavedWorkouts() {
     <div className="w-full max-w-sm">
       <form>
         <div className="flex items-center py-2">
-          <input className="appearance-none bg-transparent border-none w-full text-amber-200 mr-3 py-1 px-2 leading-tight focus:outline-none" type="text" placeholder="Search..."></input>
-          <button className="bg-amber-200 hover:bg-amber-400  text-sm  text-black py-1 px-2 rounded" type="button">
-           Search
+          <input className="bg-black border-2 text-white border-amber-200 rounded-l-md py-2 px-4 w-full" type="text" placeholder="Search"></input>
+          <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold rounded-r-md py-2 px-4">
+            Search
           </button>
         </div>
       </form>

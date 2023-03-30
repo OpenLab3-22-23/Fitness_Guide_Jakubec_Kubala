@@ -36,7 +36,7 @@ function HomeWorkout() {
          <form>
           <div className="flex items-center py-2">
             <form className="flex" id="search-form">
-              <input className="bg-black border-2 border-amber-200  rounded-l-md py-2 px-4 w-full" type="text" placeholder="Search"></input>
+              <input className="bg-black border-2 border-amber-200 text-white rounded-l-md py-2 px-4 w-full" type="text" placeholder="Search"></input>
               <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold rounded-r-md py-2 px-4">
                 Search
               </button>

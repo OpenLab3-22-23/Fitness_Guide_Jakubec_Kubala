@@ -47,14 +47,16 @@ function HomeWorkout() {
 
         <div className='flex justify-center pt-10'>
          <Link to="/Pushup"> 
-         <div>
-         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75'></img>
+         <div className='relative'>
+         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
+         <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PUSH UP</p>
          </div>
          </Link>
 
          <Link to="/Pullup">
-        <div>
+        <div className='relative'>
         <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-75'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PULL UP</p>
         </div>
         </Link>
 

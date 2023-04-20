@@ -32,10 +32,14 @@ function Contact() {
           <h1 className="text-amber-200 font-semibold text-5xl">CONTACT</h1>
         </header>
         <div className='text-2xl text-center pt-20 text-white'>
-         Matej-Email: Nepoviem@gmail.com
+          <div className='inline-block bg-black opacity-75'>
+           Matej-Email: Nepoviem@gmail.com
+          </div>
         </div>
         <div className='text-2xl text-center pt-20 text-white'>
-         Samuel-Email: Neviem@gmail.com
+          <div className='inline-block bg-black opacity-75'>
+           Samuel-Email: Neviem@gmail.com
+          </div>
         </div>
      </div>
     </div> 

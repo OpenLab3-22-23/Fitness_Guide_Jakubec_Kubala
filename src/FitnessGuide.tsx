@@ -26,8 +26,10 @@ function FitnessGuide() {
   }
 
   return (
+    
  <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
   <div className="h-full w-full ">
+    
     <header className='bg-black p-10 flex items-center justify-between'>
       <nav className='flex'>
         <Link to="/Log">

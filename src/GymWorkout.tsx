@@ -22,10 +22,11 @@ function GymWorkout() {
         sortBy: { column: "name", order: "asc"}
       });   
   }
+  
 
 
-
-  return (
+  return  (
+    
     <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
     <div className="min-h-screen w-full ">
     <header className='bg-black p-10 flex items-center justify-center h-full'>
@@ -35,8 +36,23 @@ function GymWorkout() {
       <h1 className="text-amber-200 font-semibold text-5xl">GYMWORKOUT</h1>
     </header>
 
+    {/* <div className="w-full max-w-sm">
+    <form action="/" method="get">
+        <label htmlFor="header-search">
+            <span className="visually-hidden">Search blog posts</span>
+        </label>
+        <input
+            type="text"
+            id="header-search"
+            placeholder="Search blog posts"
+            name="s" 
+        />
+        <button type="submit">Search</button>
+      </form>
+    </div> */}
+
     <div className="w-full max-w-sm">
-     <form>
+    <form>
       <div className="flex items-center py-2">
         <form className="flex" id="search-form">
           <input className="bg-black border-2 text-white border-amber-200 rounded-l-md py-2 px-4 w-full" type="text" placeholder="Search"></input>
@@ -50,40 +66,46 @@ function GymWorkout() {
 
     <div className='flex justify-center pt-10'>
       <Link to="/Benchpress"> 
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "benchpress.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">BENCHPRESS</p>
        </div>
       </Link>
 
       <Link to="/Bicepcurls">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "bicepcurls.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">BICEP CURLS</p>
        </div>
       </Link>
 
       <Link to="/Cableflies">
-       <div>
+       <div className='relative'> 
         <img src={CDNURL + "/" + "cableflies.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">CABLE FLIES</p>
        </div>
       </Link>
     </div>
     <div className='flex justify-center pt-10'>
 
       <Link to="/Deadlift">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "deadlift.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">DEADLIFT</p>
        </div>
       </Link>
     
       <Link to="/Legpress">
-       <div>
+       <div className='relative '>
         <img src={CDNURL + "/" + "legpress.png"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">LEGPRESS</p>
        </div>
       </Link>
 
       <Link to="/Shoulderseatedpress">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "shoulderseatedpress.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ml-10">SHOULDER SEATED PRESS</p>
        </div>
       </Link>
     </div>

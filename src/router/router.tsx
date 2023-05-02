@@ -19,6 +19,8 @@ import Legpress from "../GymWorkouts/Legpress";
 import Shoulderseatedpress from "../GymWorkouts/Shoulderseatedpress";
 import Pushup from "../HomeWorkout/Pushup";
 import Pullup from "../HomeWorkout/Pullup";
+import Plank from "../HomeWorkout/Plank";
+import Bridge from "../HomeWorkout/Bridge";
 
 export const router = createBrowserRouter([
   {
@@ -100,5 +102,13 @@ export const router = createBrowserRouter([
   {
     path: "/Pullup",
     element: <Pullup />,
+  },
+  {
+    path: "/Plank",
+    element: <Plank />,
+  },
+  {
+    path: "/Bridge",
+    element: <Bridge />,
   },
 ]);

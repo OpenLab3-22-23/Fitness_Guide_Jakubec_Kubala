@@ -29,7 +29,7 @@ function Benchpress() {
           <Link to="/FitnessGuide">
           <img src={CDNURL + "/" + "Logo.png"} className='mr-10'></img>
           </Link>
-          <h1 className="text-amber-200 font-semibold text-5xl">BENCH PRESS</h1>
+          <h1 className="text-amber-200 font-semibold text-5xl">PULL UP</h1>
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a bench press?</div>

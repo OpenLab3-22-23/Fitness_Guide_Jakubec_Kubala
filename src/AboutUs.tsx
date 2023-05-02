@@ -31,9 +31,11 @@ function AboutUs() {
           </Link>
           <h1 className="text-amber-200 font-semibold text-5xl">ABOUT US</h1>
         </header>
-        <div className='text-2xl text-center pt-20 text-white'>
-          We made this web site for people who are interested in working out, you can find many exercises<br></br> that can be done home
-          or in a gym. We will explain technique, advantages as well as disadvanges of the exercises.
+        <div className='text-2xl text-center pt-20 text-white '>
+           <div className='inline-block bg-black opacity-75'>
+            We made this web site for people who are interested in working out, you can find many exercises<br></br> that can be done home
+            or in a gym. We will explain technique, advantages as well as disadvanges of the exercises.
+           </div>
         </div>
      </div>
     </div> 

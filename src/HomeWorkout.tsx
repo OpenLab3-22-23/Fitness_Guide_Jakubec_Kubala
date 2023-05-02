@@ -46,19 +46,37 @@ function HomeWorkout() {
          </div>
 
         <div className='flex justify-center pt-10'>
-         <Link to="/Pushup"> 
-         <div className='relative'>
-         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
-         <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PUSH UP</p>
-         </div>
-         </Link>
 
-         <Link to="/Pullup">
-        <div className='relative'>
-        <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-75'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PULL UP</p>
+          <Link to="/Pushup"> 
+          <div className='relative'>
+            <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
+            <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PUSH UP</p>
+          </div>
+          </Link>
+
+          <Link to="/Pullup">
+          <div className='relative'>
+            <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-90'></img>
+            <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PULL UP</p>
+          </div>
+          </Link>
+
+          <Link to="/Plank">
+            <div className='relative'>
+              <img src={CDNURL + "/" + "plank.jpeg"} className='mx-20 opacity-75'></img>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PLANK</p>
+            </div>
+          </Link>
+
         </div>
-        </Link>
+        <div className='flex justify-center pt-10'>
+          
+          <Link to="/Bridge">
+            <div className='relative'>
+              <img src={CDNURL + "/" + "bridge.jpeg"} className='mx-20 opacity-75'></img>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">BRIDGE</p>
+            </div>
+          </Link>
 
         </div>
 

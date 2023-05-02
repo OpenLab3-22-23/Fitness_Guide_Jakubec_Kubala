@@ -50,40 +50,46 @@ function GymWorkout() {
 
     <div className='flex justify-center pt-10'>
       <Link to="/Benchpress"> 
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "benchpress.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ">BENCH PRESS</p>
        </div>
       </Link>
 
       <Link to="/Bicepcurls">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "bicepcurls.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">BICEP CURLS</p>
        </div>
       </Link>
 
       <Link to="/Cableflies">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "cableflies.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">CABLE FLYES</p>
        </div>
       </Link>
     </div>
     <div className='flex justify-center pt-10'>
 
       <Link to="/Deadlift">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "deadlift.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">DEADLIFT</p>
        </div>
       </Link>
     
       <Link to="/Legpress">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "legpress.png"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">LEGPRESS</p>
        </div>
       </Link>
 
       <Link to="/Shoulderseatedpress">
-       <div>
+       <div className='relative'>
         <img src={CDNURL + "/" + "shoulderseatedpress.jpeg"} className='mx-20 opacity-90'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">SHOULDER SEATED PRESS</p>
        </div>
       </Link>
     </div>

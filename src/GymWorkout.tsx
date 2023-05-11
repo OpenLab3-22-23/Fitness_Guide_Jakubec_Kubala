@@ -68,21 +68,21 @@ function GymWorkout() {
       <Link to="/Benchpress"> 
        <div className='relative'>
         <img src={CDNURL + "/" + "benchpress.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full ">BENCH PRESS</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BENCHPRESS</p>
        </div>
       </Link>
 
       <Link to="/Bicepcurls">
        <div className='relative'>
         <img src={CDNURL + "/" + "bicepcurls.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">BICEP CURLS</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BICEP CURLS</p>
        </div>
       </Link>
 
       <Link to="/Cableflies">
-       <div className='relative'>
+       <div className='relative'> 
         <img src={CDNURL + "/" + "cableflies.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">CABLE FLYES</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">CABLE FLIES</p>
        </div>
       </Link>
     </div>
@@ -91,21 +91,21 @@ function GymWorkout() {
       <Link to="/Deadlift">
        <div className='relative'>
         <img src={CDNURL + "/" + "deadlift.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">DEADLIFT</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">DEADLIFT</p>
        </div>
       </Link>
     
       <Link to="/Legpress">
-       <div className='relative'>
+       <div className='relative '>
         <img src={CDNURL + "/" + "legpress.png"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">LEGPRESS</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">LEGPRESS</p>
        </div>
       </Link>
 
       <Link to="/Shoulderseatedpress">
        <div className='relative'>
         <img src={CDNURL + "/" + "shoulderseatedpress.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">SHOULDER SEATED PRESS</p>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">SHOULDER SEATED PRESS</p>
        </div>
       </Link>
     </div>

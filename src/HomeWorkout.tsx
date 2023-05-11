@@ -46,25 +46,24 @@ function HomeWorkout() {
          </div>
 
         <div className='flex justify-center pt-10'>
+         <Link to="/Pushup"> 
+         <div className='relative'>
+         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
+         <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PUSH UP</p>
+         </div>
+         </Link>
 
-          <Link to="/Pushup"> 
-          <div className='relative'>
-            <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
-            <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PUSH UP</p>
-          </div>
-          </Link>
+         <Link to="/Pullup">
+        <div className='relative'>
+        <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-75'></img>
+        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PULL UP </p>
+        </div>
+        </Link>
 
-          <Link to="/Pullup">
-          <div className='relative'>
-            <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-90'></img>
-            <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PULL UP</p>
-          </div>
-          </Link>
-
-          <Link to="/Plank">
+        <Link to="/Plank">
             <div className='relative'>
               <img src={CDNURL + "/" + "plank.jpeg"} className='mx-20 opacity-75'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">PLANK</p>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PLANK</p>
             </div>
           </Link>
 
@@ -74,7 +73,7 @@ function HomeWorkout() {
           <Link to="/Bridge">
             <div className='relative'>
               <img src={CDNURL + "/" + "bridge.jpeg"} className='mx-20 opacity-75'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full">BRIDGE</p>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BRIDGE</p>
             </div>
           </Link>
 
@@ -82,6 +81,7 @@ function HomeWorkout() {
 
 
      </div>
+
     </div> 
   )
 };

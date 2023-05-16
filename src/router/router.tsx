@@ -21,6 +21,8 @@ import Pushup from "../HomeWorkout/Pushup";
 import Pullup from "../HomeWorkout/Pullup";
 import Plank from "../HomeWorkout/Plank";
 import Bridge from "../HomeWorkout/Bridge";
+import Wallsquat from "../HomeWorkout/Wallsquat";
+import Birddog from "../HomeWorkout/Birddog";
 
 export const router = createBrowserRouter([
   {
@@ -110,5 +112,13 @@ export const router = createBrowserRouter([
   {
     path: "/Bridge",
     element: <Bridge />,
+  },
+  {
+    path: "/Wallsquat",
+    element: <Wallsquat />
+  },
+  {
+    path: "/Birddog",
+    element: <Birddog />
   },
 ]);

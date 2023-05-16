@@ -33,7 +33,7 @@ function AboutUs() {
         </header>
         <div className='text-2xl text-center pt-20 text-white'>
           We made this web site for people who are interested in working out, you can find many exercises<br></br> that can be done home
-          or in a gym. We will explain technique, advantages as well as disadvanges of the exercises.
+          or in a gym. We explain technique, advantages as well as disadvanges of the exercises.
         </div>
      </div>
     </div> 

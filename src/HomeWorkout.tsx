@@ -46,9 +46,10 @@ function HomeWorkout() {
          </div>
 
         <div className='flex justify-center pt-10'>
+          
          <Link to="/Pushup"> 
          <div className='relative'>
-         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 object-cover'></img>
+         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 r'></img>
          <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PUSH UP</p>
          </div>
          </Link>
@@ -76,6 +77,21 @@ function HomeWorkout() {
               <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BRIDGE</p>
             </div>
           </Link>
+
+          <Link to="/Wallsquat">
+            <div className='relative'>
+              <img src={CDNURL + "/" + "wallsquat.png"} className='mx-20 opacity-80'></img>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">WALL SQUAT</p>
+            </div>
+          </Link>
+
+          <Link to="/Birddog">
+            <div className='relative'>
+              <img src={CDNURL + "/" + "birddog.png"} className='mx-20 opacity-80'></img>
+              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BIRD DOG</p>
+            </div>
+          </Link>
+
 
         </div>
 

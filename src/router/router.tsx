@@ -11,18 +11,13 @@ import Settings from "../Settings";
 import Log from "../Log";
 import FitnessGuide from "../FitnessGuide";
 import SavedWorkouts from "../SavedWorkouts";
-import Benchpress from "../GymWorkouts/Benchpress";
-import Bicepcurls from "../GymWorkouts/Bicepcurls";
-import Cableflies from "../GymWorkouts/Cableflyes";
-import Deadlift from "../GymWorkouts/Deadlift";
-import Legpress from "../GymWorkouts/Legpress";
-import Shoulderseatedpress from "../GymWorkouts/Shoulderseatedpress";
 import Pushup from "../HomeWorkout/Pushup";
 import Pullup from "../HomeWorkout/Pullup";
 import Plank from "../HomeWorkout/Plank";
 import Bridge from "../HomeWorkout/Bridge";
 import Wallsquat from "../HomeWorkout/Wallsquat";
 import Birddog from "../HomeWorkout/Birddog";
+import Workout from "../Workout";
 
 export const router = createBrowserRouter([
   {
@@ -73,30 +68,7 @@ export const router = createBrowserRouter([
     path: "/SavedWorkouts",
     element: <SavedWorkouts />,
   },
-  {
-    path: "/Benchpress",
-    element: <Benchpress />,
-  },
-  {
-    path: "/Bicepcurls",
-    element: <Bicepcurls />,
-  },
-  {
-    path: "/Cableflies",
-    element: <Cableflies />,
-  },
-  {
-    path: "/Deadlift",
-    element: <Deadlift />,
-  },
-  {
-    path: "/Legpress",
-    element: <Legpress />,
-  },
-  {
-    path: "/Shoulderseatedpress",
-    element: <Shoulderseatedpress />,
-  },
+  
   {
     path: "/Pushup",
     element: <Pushup />,
@@ -120,5 +92,9 @@ export const router = createBrowserRouter([
   {
     path: "/Birddog",
     element: <Birddog />
+  },
+  {
+    path: "/Workout",
+    element: <Workout />
   },
 ]);

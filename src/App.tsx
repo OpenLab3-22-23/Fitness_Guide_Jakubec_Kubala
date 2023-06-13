@@ -1,4 +1,4 @@
-import { Navigate } from "react-router-dom";
+import { BrowserRouter, Navigate } from "react-router-dom";
 import "./App.css";
 import { useAuth } from "./auth/Auth";
 import LandingPage from "./LandingPage";
@@ -10,13 +10,12 @@ function App() {
 
   return (
     <div className="w-screen h-screen">
-      {session ? (
-        <LandingPage />
-        
-      ) : <Navigate to="/signup" />}
-      
-    </div>
-    
+        {session ? (
+          <LandingPage />
+
+        ) : <Navigate to="/signup" />}
+
+      </div>
   );
 }
 

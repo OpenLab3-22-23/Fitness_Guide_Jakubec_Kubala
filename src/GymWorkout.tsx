@@ -24,7 +24,6 @@ function GymWorkout() {
         if(data){
           setWorkouts(data)
           setFetchError('')
-
           console.log(data)
         }
     }
@@ -62,67 +61,15 @@ function GymWorkout() {
     </div>
 
     {workouts && (
-     <div className="flex flex-wrap justify-center">
+     <div className="flex flex-wrap justify-center ">
        {workouts.map(workout => (
-        
-         <div className='w-1/3 flex flex-col items-center'>
-          <img src={workout.imgUrl} className='w-1/1'/>
+        <Link to="/Workout" state={workout} className='w-1/3 flex flex-col items-center mt-10'>
+          <img src={workout.imgUrl} className='w-1/1 opacity-90'/>
           <p className="text-amber-200 font-bold text-2xl uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{workout.title}</p>
-         </div>
-        
+         </Link>
        ))}
      </div>
     )}
-
-  {/*
-    <div className='flex justify-center pt-10'>
-      <Link to="/Benchpress"> 
-       <div className='relative'>
-        <img src={CDNURL + "/" + "benchpress.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BENCHPRESS</p>
-       </div>
-      </Link>
-
-      <Link to="/Bicepcurls">
-       <div className='relative'>
-        <img src={CDNURL + "/" + "bicepcurls.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BICEP CURLS</p>
-       </div>
-      </Link>
-
-      <Link to="/Cableflies">
-       <div className='relative'> 
-        <img src={CDNURL + "/" + "cableflies.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">CABLE FLIES</p>
-       </div>
-      </Link>
-    </div>
-    <div className='flex justify-center pt-10'>
-
-      <Link to="/Deadlift">
-       <div className='relative'>
-        <img src={CDNURL + "/" + "deadlift.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">DEADLIFT</p>
-       </div>
-      </Link>
-    
-      <Link to="/Legpress">
-       <div className='relative '>
-        <img src={CDNURL + "/" + "legpress.png"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">LEGPRESS</p>
-       </div>
-      </Link>
-
-      <Link to="/Shoulderseatedpress">
-       <div className='relative'>
-        <img src={CDNURL + "/" + "shoulderseatedpress.jpeg"} className='mx-20 opacity-90'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">SHOULDER SEATED PRESS</p>
-       </div>
-      </Link>
-    </div>
-  */}
-
-
   </div>
  </div>
   )

@@ -32,7 +32,7 @@ function Wallsquat() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a wall squat?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
         For this variation of wall squats, stand with your back to a wall and sink down to a seated position with 
         your thighs parallel to the floor. Let the wall support your back.<br></br>
         BENEFITS:<br></br>

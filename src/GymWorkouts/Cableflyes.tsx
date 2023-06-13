@@ -34,7 +34,7 @@ function Cableflyes() {
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a Cable flyes?</div>
-        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Set the pulleys on a dual-cable 
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>Set the pulleys on a dual-cable 
           machine to chest height, and stand between the two stacks. Grab the handles. Keeping your back straight and core engaged, raise your
           arms out to your sides, palms facing forward, and walk a step or two forward in order to create tension on the cables. Stand with
           one foot in front of the other.Bend your elbows slightly, making sure not to let them travel behind your shoulders. This is your 

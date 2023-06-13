@@ -32,7 +32,7 @@ function Plank() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a plank?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
         Assume a plank position on your forearms. Your body should form a straight line from head to feet.
         Ensure your lower back and hips don’t sag. Hold the position for 30 seconds to 1 minute.<br></br>
         BENEFITS:<br></br>

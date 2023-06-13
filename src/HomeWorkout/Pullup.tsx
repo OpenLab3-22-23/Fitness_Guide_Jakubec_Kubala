@@ -32,7 +32,7 @@ function Pullup() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a pull up?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
         Start by standing directly below a pull-up bar. Place your hands in an overhand grip (palms facing away from your body)
         with your hands slightly further than shoulder-width apart. If you can’t reach the bar from standing on the floor, you 
         can place a box beneath you and stand on that. Once your hands are holding onto the bar, you’re in your starting position.

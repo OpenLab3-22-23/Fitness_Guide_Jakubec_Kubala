@@ -21,6 +21,8 @@ function Benchpress() {
       });   
   }
 
+  
+
   return (
   
     <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
@@ -33,7 +35,7 @@ function Benchpress() {
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a bench press?</div>
-        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Lie on your back on a flat bench. Grip a barbell with 
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>Lie on your back on a flat bench. Grip a barbell with 
           hands slightly wider than shoulder width.
           The bar should be directly over the shoulders.<br></br>
           Press your feet firmly into the ground and keep your hips on the bench throughout the entire movement.<br></br>

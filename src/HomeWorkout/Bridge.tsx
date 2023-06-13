@@ -32,7 +32,7 @@ function Bridge() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a bridge?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
         Lie on your back with your knees bent, feet flat on the floor, and your arms extended by your sides.
         Pushing through your feet and bracing your core, raise your bottom off the ground until your hips are fully extended, squeezing your glutes at the top.
         Slowly return to the starting position and repeat.<br></br>

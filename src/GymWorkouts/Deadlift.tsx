@@ -33,7 +33,7 @@ function Deadlift() {
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a Deadlift?</div>
-        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Stand behind a barbell with your feet about shoulder-width apart.
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>Stand behind a barbell with your feet about shoulder-width apart.
           Sit your hips back, bend your knees slightly, and lean your torso forward, maintaining a tight core and flat back. Grab the bar, placing your hands shoulder-width apart,
           palms facing in toward your body.
           Push your feet into the floor and stand up tall, pulling the weight with you and keeping your arms straight. Bring your hips forward and squeeze your abs and glutes at 

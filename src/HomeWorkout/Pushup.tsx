@@ -32,7 +32,7 @@ function Pushup() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a push up?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
        Contract your abs and tighten your core by pulling your belly button toward your spine. 
        Inhale as you slowly bend your elbows and lower yourself to the floor, until your elbows are at a 90-degree angle.
        Exhale while contracting your chest muscles and pushing back up through your hands, returning to the start position.<br></br>

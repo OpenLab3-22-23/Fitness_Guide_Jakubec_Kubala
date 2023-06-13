@@ -1,31 +1,42 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
 
-import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
+import { supabase } from './supabase/supabaseClient';
 const CDNURL = "https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/";
 
 function GymWorkout() {
 
   
-  const [ images, setImages ] = useState([]);
-  const user = useUser();
-  const supabase = useSupabaseClient();
+  const[fetchError, setFetchError] = useState('')
+  const[workouts, setWorkouts] = useState(null)
 
-  async function getImages() {
-    const { data, error } = await supabase
-      .storage
-      .from('gym-workout-imgs')
-      .list("/", {
-        limit: 100,
-        offset: 0,
-        sortBy: { column: "name", order: "asc"}
-      });   
-  }
+  useEffect(() => {
+    const fetchWorkouts = async () => {
+      const{data,error} = await supabase
+        .from('Gym Workouts')
+        .select()
+
+        if(error){
+          setFetchError('Could not fetch')
+          console.log(error)
+        }
+        if(data){
+          setWorkouts(data)
+          setFetchError('')
+
+          console.log(data)
+        }
+    }
+
+    fetchWorkouts()
+  }, [])
   
 
 
   return  (
+
+    
     
     <div className="min-h-screen w-screen bg-[length:1920px_1080px] bg-center bg-[url('https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/background.png')]">
     <div className="min-h-screen w-full ">
@@ -36,20 +47,6 @@ function GymWorkout() {
       <h1 className="text-amber-200 font-semibold text-5xl">GYMWORKOUT</h1>
     </header>
 
-    {/* <div className="w-full max-w-sm">
-    <form action="/" method="get">
-        <label htmlFor="header-search">
-            <span className="visually-hidden">Search blog posts</span>
-        </label>
-        <input
-            type="text"
-            id="header-search"
-            placeholder="Search blog posts"
-            name="s" 
-        />
-        <button type="submit">Search</button>
-      </form>
-    </div> */}
 
     <div className="w-full max-w-sm">
     <form>
@@ -64,6 +61,20 @@ function GymWorkout() {
      </form>
     </div>
 
+    {workouts && (
+     <div className="flex flex-wrap justify-center">
+       {workouts.map(workout => (
+        
+         <div className='w-1/3 flex flex-col items-center'>
+          <img src={workout.imgUrl} className='w-1/1'/>
+          <p className="text-amber-200 font-bold text-2xl uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{workout.title}</p>
+         </div>
+        
+       ))}
+     </div>
+    )}
+
+  {/*
     <div className='flex justify-center pt-10'>
       <Link to="/Benchpress"> 
        <div className='relative'>
@@ -109,7 +120,7 @@ function GymWorkout() {
        </div>
       </Link>
     </div>
-    
+  */}
 
 
   </div>

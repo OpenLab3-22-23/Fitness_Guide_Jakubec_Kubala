@@ -33,7 +33,7 @@ function Legpress() {
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a Cable flyes?</div>
-        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Brace your abdominal muscles and push the platform
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>Brace your abdominal muscles and push the platform
           away with your heels and forefoot. Your heels should remain flat on the footplate. The front of your foot or toes should never be used exclusively to move
           the pad forward. While exhaling, extend your legs and keep your head and back flat against the seat pad. Extend with slow control rather than with an 
           explosive movement. Pause at the top of the movement. Do not lock out your knees, and ensure that they are not bowing out or in.

@@ -32,7 +32,7 @@ function Birddog() {
         </header>
       
       <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a bridge?</div>
-      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>
+      <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>
             Get on all fours, ensuring your hands are directly underneath your shoulders and your knees are underneath your hips.
             Keeping your neck neutral, simultaneously extend your left arm and right leg, keeping your hips square to the ground. Pause here for 2 seconds.
             Return to the start position. Repeat with your right arm and left leg.<br></br>

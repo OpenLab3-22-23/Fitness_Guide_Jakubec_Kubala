@@ -33,14 +33,14 @@ function Bicepcurls() {
         </header>
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a Bicep curls?</div>
-        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10'>Hold the barbell
+        <div className='flex justify-center bg-black mold the barbell
           with both hands facing up so the wrists, elbows, and shoulders are in a straight line about shoulder-width apart. Lift 
           the barbell toward the shoulders while bending the elbows and keeping them next to the middle of the body. Slowly lower
           the weight to return to the starting position. Keep chest still, using just the arms for the movement.<br></br>
           BENEFITS:<br></br>
           Bicep curls are good for hypertrophy, or growth in muscle size, of the bicep. So if you're looking to make everyday 
           activities easier while toning your arms, bicep curls can definitely help. Building a strong bicep muscle also adds 
-          to the appearance of strength in the upper body.
+          to the appearance of strength in the upper body.x-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>H
         </div>
 
         <div className='flex justify-center pt-20'>

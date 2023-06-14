@@ -23,7 +23,7 @@ function Workout() {
 
         <div className='text-white flex justify-center font-semibold text-6xl pt-20'>How to do a {workout.title}?</div>
         <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-10 text-center'>{workout.description} </div>
-
+        <div className='flex justify-center bg-black mx-40 text-white font-semibold text-2xl opacity-80 mt-5 text-center'>{workout.benefits} </div>
         <div className='flex justify-center pt-20'>
           <button className="bg-amber-200 hover:bg-amber-400 text-black text-lg font-bold py-4 px-6 rounded">
           SAVE WORKOUT

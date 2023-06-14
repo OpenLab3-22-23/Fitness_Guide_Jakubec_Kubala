@@ -11,12 +11,6 @@ import Settings from "../Settings";
 import Log from "../Log";
 import FitnessGuide from "../FitnessGuide";
 import SavedWorkouts from "../SavedWorkouts";
-import Pushup from "../HomeWorkout/Pushup";
-import Pullup from "../HomeWorkout/Pullup";
-import Plank from "../HomeWorkout/Plank";
-import Bridge from "../HomeWorkout/Bridge";
-import Wallsquat from "../HomeWorkout/Wallsquat";
-import Birddog from "../HomeWorkout/Birddog";
 import Workout from "../Workout";
 
 export const router = createBrowserRouter([
@@ -69,30 +63,7 @@ export const router = createBrowserRouter([
     element: <SavedWorkouts />,
   },
   
-  {
-    path: "/Pushup",
-    element: <Pushup />,
-  },
-  {
-    path: "/Pullup",
-    element: <Pullup />,
-  },
-  {
-    path: "/Plank",
-    element: <Plank />,
-  },
-  {
-    path: "/Bridge",
-    element: <Bridge />,
-  },
-  {
-    path: "/Wallsquat",
-    element: <Wallsquat />
-  },
-  {
-    path: "/Birddog",
-    element: <Birddog />
-  },
+ 
   {
     path: "/Workout",
     element: <Workout />

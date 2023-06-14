@@ -1,25 +1,36 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 // import the Tailwind CSS styles
-import { useUser, useSupabaseClient } from "@supabase/auth-helpers-react";
+
+import { supabase } from './supabase/supabaseClient';
 const CDNURL = "https://rddeioodoqyucqroampy.supabase.co/storage/v1/object/public/gym-workout-imgs/";
 
 
 function HomeWorkout() {
-  const [ images, setImages ] = useState([]);
-  const user = useUser();
-  const supabase = useSupabaseClient();
 
-  async function getImages() {
-    const { data, error } = await supabase
-      .storage
-      .from('gym-workout-imgs')
-      .list("/", {
-        limit: 100,
-        offset: 0,
-        sortBy: { column: "name", order: "asc"}
-      });   
-  }
+  const[fetchError, setFetchError] = useState('')
+  const[workouts, setWorkouts] = useState(null)
+
+  useEffect(() => {
+    const fetchWorkouts = async () => {
+      const{data,error} = await supabase
+        .from('Home Workouts')
+        .select()
+
+        if(error){
+          setFetchError('Could not fetch')
+          console.log(error)
+        }
+        if(data){
+          setWorkouts(data)
+          setFetchError('')
+          console.log(data)
+        }
+    }
+
+    fetchWorkouts()
+  }, [])
+  
 
   return (
   
@@ -45,55 +56,16 @@ function HomeWorkout() {
          </form>
          </div>
 
-        <div className='flex justify-center pt-10'>
-          
-         <Link to="/Pushup"> 
-         <div className='relative'>
-         <img src={CDNURL + "/" + "pushup.png"} className='mx-20 opacity-75 r'></img>
-         <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PUSH UP</p>
+         {workouts && (
+         <div className="flex flex-wrap justify-center ">
+          {workouts.map(workout => (
+            <Link to="/Workout" state={workout} className='w-1/3 flex flex-col items-center mt-10'>
+              <img src={workout.imgUrl} className='w-1/1 opacity-90'/>
+              <p className="text-amber-200 font-bold text-2xl uppercase drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">{workout.title}</p>
+            </Link>
+          ))}
          </div>
-         </Link>
-
-         <Link to="/Pullup">
-        <div className='relative'>
-        <img src={CDNURL + "/" + "pullup.jpeg"} className='mx-20 opacity-75'></img>
-        <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PULL UP </p>
-        </div>
-        </Link>
-
-        <Link to="/Plank">
-            <div className='relative'>
-              <img src={CDNURL + "/" + "plank.jpeg"} className='mx-20 opacity-75'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">PLANK</p>
-            </div>
-          </Link>
-
-        </div>
-        <div className='flex justify-center pt-10'>
-          
-          <Link to="/Bridge">
-            <div className='relative'>
-              <img src={CDNURL + "/" + "bridge.jpeg"} className='mx-20 opacity-75'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BRIDGE</p>
-            </div>
-          </Link>
-
-          <Link to="/Wallsquat">
-            <div className='relative'>
-              <img src={CDNURL + "/" + "wallsquat.png"} className='mx-20 opacity-80'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">WALL SQUAT</p>
-            </div>
-          </Link>
-
-          <Link to="/Birddog">
-            <div className='relative'>
-              <img src={CDNURL + "/" + "birddog.png"} className='mx-20 opacity-80'></img>
-              <p className="absolute top-0 left-0 text-amber-200 font-bold text-2xl text-center w-full drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">BIRD DOG</p>
-            </div>
-          </Link>
-
-
-        </div>
+        )}
 
 
      </div>
